@@ -1,0 +1,23 @@
+.navbox {
+    background-color: #B0BF1A;
+    width: 20vw;
+    position: fixed;
+}
+
+.navbar {
+    height: 90vh;
+    padding: auto;
+}
+
+.navlist {
+    margin-top: -3rem;
+}
+
+.navlist li {
+    margin: 20px auto;
+    font-family: 'Raleway';
+}
+
+.navicons {
+    margin: auto 10px;
+}

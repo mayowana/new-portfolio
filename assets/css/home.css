@@ -1,0 +1,80 @@
+.home {
+    font-family: 'DM Sans';
+    width: 80%;
+   margin: auto;
+   margin-left: 20vw;
+}
+
+.home-hero {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-image: url('~/assets/img/wana.jpg');
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   color: white;
+}
+
+.home-hero::before {
+    content: ''; /* Necessary for the pseudo-element to show */
+    position: absolute; /* Positions the pseudo-element in relation to the parent */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8); /* Black with 50% opacity */
+    z-index: 1; /* Ensures the overlay is above the background image */
+  }
+
+.home-hero * {
+    position: relative; /* Enables z-index to be effective */
+    z-index: 2; /* Higher than the overlay's z-index */
+    /* Your styles for the content */
+  }
+
+.home-hero h1 {
+    font-size: 400%;
+    margin-bottom: 2rem;
+}
+
+.home-hero h2 {
+    font-size: 175%;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.home-cta button {
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #B0BF1A;
+    color: black;
+}
+
+.what-i-do {
+    padding-top: 5rem;
+    height: 80vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 150%;
+}
+
+.what-i-do h3, p, ul {
+    margin-bottom: 3rem;
+}
+
+.what-i-do ul {
+    list-style-type: none;
+}
+
+.what-i-do li {
+    margin-bottom: 1rem;
+}
+
